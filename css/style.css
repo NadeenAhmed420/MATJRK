@@ -1191,6 +1191,12 @@ input[type="radio"] {
   color: white;
 }
 
+@media (max-width: 425px) {
+  .price-page button {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .price-page .fix-gap {
     gap: 0 !important;
@@ -1210,7 +1216,12 @@ input[type="radio"] {
     width: 50px;
   }
 }
-
+@media (max-width: 426px) {
+  .price-page .box .info-2 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 /* ////////////////////////////// */
 /* BLOG PAGE */
 /* ////////////////////////////// */
@@ -2166,23 +2177,25 @@ input[type="radio"] {
 /* //////////////////////////////// */
 /* Animation */
 /* ///////////////////////////////// */
-
-@media (prefers-reduced-motion) {
+@media screen and (max-width: 768px) {
   .hidden-R,
   .hidden-L,
   .hidden-C,
   .hidden-OPA,
   .hidden-RO {
+    -webkit-animation: none !important;
+    animation: none !important;
+    transition-property: none !important;
+  }
+}
+@media (prefers-reduced-motion) {
+  .stop-anim {
     transition: none !important;
   }
 }
 
-@media (max-width: 1023px) {
-  .hidden-R,
-  .hidden-L,
-  .hidden-C,
-  .hidden-OPA,
-  .hidden-RO {
+@media (max-width: 768px) {
+  .stop-anim {
     transition: none !important;
   }
 }
