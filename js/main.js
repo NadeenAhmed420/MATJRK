@@ -56,18 +56,46 @@ dropDowns.forEach((dropDown) => {
   });
 });
 
+/////////////////////////////////////////
+//CONTROL-CATEGORY
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderInner = document.querySelector(".slider-inner");
+  const sliderInner2 = document.querySelector(".slider-inner2");
+  const scrollSpeed = 10;
+  let scrollPosition = 0;
+
+  function scrollUp() {
+    scrollPosition -= scrollSpeed;
+    sliderInner.style.transform = `translateY(${scrollPosition}px)`;
+    sliderInner2.style.transform = `translateY(${scrollPosition}px)`;
+
+    if (scrollPosition <= -sliderInner.scrollHeight) {
+      scrollPosition = 0;
+      sliderInner.style.transition = "none";
+      sliderInner.style.transform = `translateY(${scrollPosition}px)`;
+      sliderInner2.style.transition = "none";
+      sliderInner2.style.transform = `translateY(${scrollPosition}px)`;
+
+      setTimeout(() => {
+        sliderInner.style.transition = "";
+        sliderInner2.style.transition = "";
+      }, 0);
+    }
+  }
+
+  setInterval(scrollUp, 50);
+});
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //ANIMATION
 
-
-wow = new WOW(
-  {
-  boxClass:     'wow',      // default
-  animateClass: 'animated', // default
-  offset:       0,          // default
-  mobile:       false,       // default
-  live:         false ,
-  scrollContainer: null       // default
-}
-)
+wow = new WOW({
+  boxClass: "wow", // default
+  animateClass: "animated", // default
+  offset: 0, // default
+  mobile: false, // default
+  live: false,
+  scrollContainer: null, // default
+});
 wow.init();
