@@ -6,6 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
 
   <body class="stop-anim">
@@ -100,7 +101,7 @@
 
         <div class="landing hidden">
           <div class="container">
-            <div class="info hidden-OPA">
+            <div class="info wow fadeIn" data-wow-delay="0.5s">
               <h2>تواصل معنا</h2>
               <p>
                 نتشرف ونستمتع بمساعدتكم، أترك لنا رسالة أدناه وسوف يصلك رد في
@@ -140,7 +141,7 @@
 
         <section class="country overflow-hidden">
           <div class="conrainer">
-            <div class="info mt-5 pt-3 hidden-C">
+            <div class="info mt-5 pt-3 wow fadeInDownBig">
               <h3 class="light-text">
                 المنصة الأولى في المملكة العربية السعودية و الوطن العربي
               </h3>
@@ -152,18 +153,27 @@
             </div>
             <div class="country-box mt-5 pt-5">
               <div class="row">
-                <div class="col-md-4 col-lg-4 position-relative">
+                <div
+                  class="col-md-4 col-lg-4 position-relative wow fadeInDown"
+                  data-wow-delay="0.5s"
+                >
                   <span class="position-absolute">المقر الرئيسي</span>
                   <img src="Images/USA.png" alt="" />
                   <h3 class="my-3">المملكة العربية السعودية</h3>
                   <h6>55/123 ش الملك خالد، طريق المطار</h6>
                 </div>
-                <div class="col-md-4 col-lg-4">
+                <div
+                  class="col-md-4 col-lg-4 wow fadeInDown"
+                  data-wow-delay="1s"
+                >
                   <img src="Images/USA (1).png" alt="" />
                   <h3 class="my-3">مصر</h3>
                   <h6>11600 مدينة نصر، ش إبراهيم سند</h6>
                 </div>
-                <div class="col-md-4 col-lg-4">
+                <div
+                  class="col-md-4 col-lg-4 wow fadeInDown"
+                  data-wow-delay="1.5s"
+                >
                   <img src="Images/USA (2).png" alt="" />
                   <h3 class="my-3">California</h3>
                   <h6>55/123 Norman Street <br />, Sydney NSW 20</h6>
@@ -179,15 +189,18 @@
 
             <img
               src="Images/ksaa.png"
-              class="position-absolute ksa hidden-C logo-map"
+              class="position-absolute ksa wow fadeInDown"
+              data-wow-delay="1s"
             />
             <img
               src="Images/egypt.png"
-              class="position-absolute egp hidden-C logo-map"
+              class="position-absolute egp wow fadeInDown"
+              data-wow-delay="2s"
             />
             <img
               src="Images/usaaa.png"
-              class="position-absolute usa hidden-C logo-map"
+              class="position-absolute usa wow fadeInDown"
+              data-wow-delay="3s"
             />
           </div>
         </section>
@@ -281,5 +294,9 @@
     <script src="js/main.js" defer></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

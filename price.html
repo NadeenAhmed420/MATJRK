@@ -6,12 +6,13 @@
     <title>Price</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
 
-  <body class="stop-anim">
+  <body>
     <div class="mazaya mb-5">
       <div class="content">
-        <nav class="navbar navbar-expand-lg hidden-OPA">
+        <nav class="navbar navbar-expand-lg ">
           <div class="container">
             <a class="logo" href="index.html">
               <img src="Images/logo.png" alt="" />
@@ -100,7 +101,7 @@
 
         <div class="landing text-center">
           <div class="container">
-            <div class="info hidden-OPA">
+            <div class="info wow fadeIn" data-wow-delay="0.5s">
               <h3>خطط الأسعار</h3>
             </div>
           </div>
@@ -224,15 +225,22 @@
                     اشترك
                   </button>
 
-                  <div class="pop  text-light" id="pop">
+                  <div class="pop text-light" id="pop">
                     <img src="Images/pop.png" class="w-50 pt-3" />
-                    <button onclick="closePop()"><img src="Images/Multiply (1).png" class="position-absolute multiply "></button>
+                    <button onclick="closePop()">
+                      <img
+                        src="Images/Multiply (1).png"
+                        class="position-absolute multiply"
+                      />
+                    </button>
                     <h4>الباقة الأساسية:</h4>
                     <h6 class="light-text">1,000 ر.س</h6>
                     <h6 class="dark-text">إختر طريقة الدفع المناسبة:</h6>
                     <div class="drop-down text-black">
                       <div class="select">
-                        <span class="selected opacity-100">المحفظة الإلكترونية</span>
+                        <span class="selected opacity-100"
+                          >المحفظة الإلكترونية</span
+                        >
                         <div class="cart"></div>
                       </div>
                       <ul class="menu p-0 m-0 list-unstyled">
@@ -244,17 +252,29 @@
                     </div>
                   </div>
 
-                  <button onclick="openPop()" class="main-btn rounded-3 px-5 mb-5">اشترك</button>
+                  <button
+                    onclick="openPop()"
+                    class="main-btn rounded-3 px-5 mb-5"
+                  >
+                    اشترك
+                  </button>
 
-                  <div class="pop  text-light" id="pop">
+                  <div class="pop text-light" id="pop">
                     <img src="Images/pop.png" class="w-50 pt-3" />
-                    <button onclick="closePop()"><img src="Images/Multiply (1).png" class="position-absolute multiply "></button>
+                    <button onclick="closePop()">
+                      <img
+                        src="Images/Multiply (1).png"
+                        class="position-absolute multiply"
+                      />
+                    </button>
                     <h4>الباقة الأساسية:</h4>
                     <h6 class="light-text">1,500 ر.س</h6>
                     <h6 class="dark-text">إختر طريقة الدفع المناسبة:</h6>
                     <div class="drop-down text-black">
                       <div class="select">
-                        <span class="selected opacity-100">المحفظة الإلكترونية</span>
+                        <span class="selected opacity-100"
+                          >المحفظة الإلكترونية</span
+                        >
                         <div class="cart"></div>
                       </div>
                       <ul class="menu p-0 m-0 list-unstyled">
@@ -265,21 +285,20 @@
                       </ul>
                     </div>
                   </div>
-
-              
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <section class="details pt-5 mb-5 stop-anim">
           <div class="container">
             <div class="row">
-              <div class="col-md-4 col-lg-4 offset-1 hidden-R">
+              <div class="col-md-4 col-lg-4 offset-1 wow fadeInRightBig">
                 <img src="Images/Service 24_7-pana 1.svg" alt="" />
               </div>
               <div
-                class="col-md-7 col-lg-7 text-center mt-lg-5 pt-lg-5 hidden-L"
+                class="col-md-7 col-lg-7 text-center mt-lg-5 pt-lg-5 wow fadeInLeftBig"
               >
                 <h4>تحتاج المزيد من التفاصيل؟</h4>
                 <p>جاهزون عند الطلب لشرح كل مايتعلق بمتجرك!</p>
@@ -385,5 +404,9 @@
     <script src="js/main.js" defer></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

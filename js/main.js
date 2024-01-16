@@ -156,3 +156,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set the interval for scrolling
   setInterval(scrollUp, 50); // Scroll every 50 milliseconds
 });
+
+
+
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       false,       // default
+  live:         false ,
+  scrollContainer: null       // default
+}
+)
+wow.init();

@@ -6,6 +6,7 @@
     <title>MY-Account</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
 
   <body>
@@ -71,10 +72,14 @@
                 تسجيل الدخول
               </a>
               <ul class="dropdown-menu text-end mt-2">
-                <li><a class="dropdown-item" href="myAccount.html">حسابي</a></li>
+                <li>
+                  <a class="dropdown-item" href="myAccount.html">حسابي</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="licenses.html"> الترخيص و التحميل</a>
+                  <a class="dropdown-item" href="licenses.html">
+                    الترخيص و التحميل</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="bills.html">الفواتير</a></li>
@@ -92,64 +97,67 @@
 
       <div class="landing overflow-hidden">
         <div class="container">
-         <div class="info">
+          <div class="info wow fadeIn" data-wow-delay="0.5s">
             <span>الرئيسية/حسابي</span>
             <h3>حسابي</h3>
-         </div>
+          </div>
         </div>
       </div>
     </div>
     <section class="account-info">
-        <div class="container">
-            <div class="row">
-                <div class=" col-md-12 col-lg-6 ">
-                    <div class="box ">
-                       <img src="Images/profile.png" class=" d-flex m-auto ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <div class="box">
+              <img src="Images/profile.png" class="d-flex m-auto" />
 
-                <div class="content pe-4">
-                    <div class="info mt-3 pt-5 pe-5">
-                        <p class="text-end "> إسم المستخدم</p>
-                        <input type="text" class="py-2"/>
-                      </div>
-                       <div class="info mt-3  pe-5">
-                        <p class="text-end ">البريد الإلكتروني </p>
-                        <input type="email" class="py-2" />
-                      </div>
-                       <div class="info mt-3  pe-5">
-                        <p class="text-end ">رقم الهاتف </p>
-                        <input type="number" class="py-2"/>
-                      </div>
-                      <button class="main-btn enter mt-4 py-2 me-5 rounded-3">تعديل  </button>
-                    </div>
+              <div class="content pe-4">
+                <div class="info mt-3 pt-5 pe-5">
+                  <p class="text-end">إسم المستخدم</p>
+                  <input type="text" class="py-2" />
                 </div>
+                <div class="info mt-3 pe-5">
+                  <p class="text-end">البريد الإلكتروني</p>
+                  <input type="email" class="py-2" />
                 </div>
-
-                <div class="col-md-12 col-lg-6">
-                    <div class="box">
-                       <h4 class="d-flex  justify-content-center">تغيير كلمة المرور</h4>
-                       <div class="content pe-4">
-                        <div class="info mt-3 pt-5 pe-5">
-                            <p class="text-end ">  كلمة المرور الحالية</p>
-                            <input type="text" class="py-2"/>
-                          </div>
-                           <div class="info mt-3  pe-5">
-                            <p class="text-end "> كلمة المرور الجديدة </p>
-                            <input type="email" class="py-2" />
-                          </div>
-                           <div class="info mt-3  pe-5">
-                            <p class="text-end ">تأكيد كلمة المرور الجديدة  </p>
-                            <input type="number" class="py-2"/>
-                          </div>
-                          <button class="main-btn enter mt-4 py-2 me-5 rounded-3">تعديل  </button>
-                        </div>
-                    </div>
+                <div class="info mt-3 pe-5">
+                  <p class="text-end">رقم الهاتف</p>
+                  <input type="number" class="py-2" />
                 </div>
+                <button class="main-btn enter mt-4 py-2 me-5 rounded-3">
+                  تعديل
+                </button>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <div class="col-md-12 col-lg-6">
+            <div class="box">
+              <h4 class="d-flex justify-content-center">تغيير كلمة المرور</h4>
+              <div class="content pe-4">
+                <div class="info mt-3 pt-5 pe-5">
+                  <p class="text-end">كلمة المرور الحالية</p>
+                  <input type="text" class="py-2" />
+                </div>
+                <div class="info mt-3 pe-5">
+                  <p class="text-end">كلمة المرور الجديدة</p>
+                  <input type="email" class="py-2" />
+                </div>
+                <div class="info mt-3 pe-5">
+                  <p class="text-end">تأكيد كلمة المرور الجديدة</p>
+                  <input type="number" class="py-2" />
+                </div>
+                <button class="main-btn enter mt-4 py-2 me-5 rounded-3">
+                  تعديل
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <footer class="footer pt-5 mt-5 ">
+
+    <footer class="footer pt-5 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-lg-3">
@@ -236,5 +244,9 @@
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
