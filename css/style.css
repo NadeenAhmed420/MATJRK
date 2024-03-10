@@ -45,19 +45,39 @@ input {
   color: transparent;
 }
 
+@media (max-width: 992px) {
+  .d-none-small {
+    display: none !important;
+  }
+}
+@media (max-width: 576px) {
+  .d-none-smaller {
+    display: none !important;
+  }
+  .text-c {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .xx {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 /* ////////////////////////////////////// */
 .header {
   background-image: url(../Images/Home.svg);
   background-position: center;
   background-size: cover;
-  height: 80vh;
 }
 .header .content {
   background-image: url(../Images/Rectangle\ 12.png);
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  padding-bottom: 50px;
 }
+
 .logo {
   width: 100px;
 }
@@ -91,7 +111,7 @@ input {
 /* //////////// */
 
 .landing .info {
-  margin-top: 100px;
+  /* margin-top: 80px; */
 
   color: rgba(255, 255, 255, 1);
 }
@@ -209,6 +229,11 @@ input {
   line-height: 34px;
   text-align: right;
 }
+@media (max-width: 576px) {
+  .offers p {
+    font-size: 17px !important;
+  }
+}
 .offers .info a {
   background: linear-gradient(28.89deg, #7233ad -15.01%, #1ae3d9 124.06%);
   width: 230px;
@@ -251,6 +276,12 @@ input {
   line-height: 22px;
   color: rgba(59, 5, 110, 1);
 }
+@media (max-width: 576px) {
+  .offers h5 {
+    font-size: 20px;
+    line-height: 0px;
+  }
+}
 .offers h6 {
   font-family: var(--first-font);
   font-weight: 500;
@@ -271,6 +302,12 @@ input {
   font-weight: 700;
   font-size: 40px;
   color: rgba(59, 5, 110, 1);
+}
+@media (max-width: 576px) {
+  .design h3 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
 }
 .design p {
   color: rgba(50, 9, 88, 0.85);
@@ -368,6 +405,19 @@ input {
   font-family: var(--first-font);
   font-weight: 700;
   font-size: 40px;
+}
+@media (max-width: 576px) {
+  .control h4,
+  .control h5,
+  .price h4,
+  .price h5,
+  .payment h4,
+  .payment h5,
+  .category h4,
+  .category h5 {
+    font-size: 30px;
+    font-weight: 600;
+  }
 }
 .control h4,
 .price h4,
@@ -518,9 +568,14 @@ input {
   max-width: 600px;
   color: rgba(59, 5, 110, 1);
 }
+@media (max-width: 576px) {
+  .package h4 {
+    font-size: 30px;
+  }
+}
 .content1 h5 {
   font-family: var(--first-font);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 30px;
   color: white;
 }
@@ -532,7 +587,7 @@ input {
 }
 .content2 h5 {
   font-family: var(--first-font);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 30px;
   color: rgba(76, 42, 110, 1);
 }
@@ -584,7 +639,6 @@ input {
 }
 .package .box {
   max-width: 600px;
-  height: 650px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -673,7 +727,11 @@ input {
   font-weight: 700;
   font-size: 35px;
 }
-
+@media (max-width: 576px) {
+  .newest-blog h3 {
+    font-size: 20px;
+  }
+}
 .newest-blog .list {
   width: fit-content;
   height: 50px;
@@ -790,13 +848,13 @@ input[type="radio"] {
   background-image: url(../Images/team.png);
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  /* height: 80vh; */
 }
 .team .content {
   background-image: url(../Images/Rectangle\ 12.png);
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  /* height: 80vh; */
 }
 .team .landing h3 {
   font-family: var(--first-font);
@@ -808,9 +866,9 @@ input[type="radio"] {
   font-weight: 400;
   font-size: 25px;
 }
-.team .landing {
+/* .team .landing {
   margin: 130px auto;
-}
+} */
 
 @media (max-width: 1024px) {
   .team .landing h3 {
@@ -867,8 +925,7 @@ input[type="radio"] {
   font-family: var(--first-font);
   color: rgba(50, 9, 88, 1);
   font-weight: 500;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 22px;
 }
 @media (max-width: 1024px) {
   .about p {
@@ -958,6 +1015,11 @@ input[type="radio"] {
   color: rgba(59, 5, 110, 1);
   letter-spacing: 1px;
 }
+@media (max-width: 576px) {
+  .details h4 {
+    font-size: 30px !important;
+  }
+}
 .details p {
   font-family: var(--first-font);
   font-weight: 500;
@@ -977,7 +1039,7 @@ input[type="radio"] {
   background-image: url(../Images/mazaya.png);
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  padding-bottom: 100px;
 }
 .mazaya h3 {
   font-family: var(--first-font);
@@ -990,28 +1052,32 @@ input[type="radio"] {
     font-size: 25px;
   }
 }
-.mazaya h5 {
-  margin-top: 80px;
+.props h5 {
   font-family: var(--first-font);
   font-weight: 700;
   font-size: 35px;
   /* color: rgba(241, 242, 242, 1); */
 }
 
-.mazaya .header-2 {
-  margin-top: 80px;
+.props .header-2 {
+  margin-top: 20px;
   font-family: var(--first-font);
   font-weight: 700;
   font-size: 35px;
+}
+@media (max-width: 576px) {
+  .props .header-2 {
+    font-size: 25px;
+  }
 }
 .cardd {
   background-image: url(../Images/mazaya-cover.png);
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  /* height: 50vh; */
 }
 .cardd h4 {
-  padding-top: 90px;
+  /* padding-top: 90px; */
   font-family: var(--second-font);
   font-weight: 800;
   font-size: 35px;
@@ -1232,14 +1298,13 @@ input[type="radio"] {
   background-image: url(../Images/blog.png);
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  /* height: 60vh; */
 }
 .blog .landing h3 {
   max-width: 550px;
-  margin: 150px auto;
+  padding: 60px;
   font-family: var(--first-font);
   font-weight: 700;
-  font-size: 25px;
   text-align: center;
 }
 .landing .search {
@@ -1370,6 +1435,15 @@ input[type="radio"] {
   color: white;
   font-size: 40px;
 }
+@media (max-width: 576px) {
+  .subscribe h4 {
+    font-weight: 600;
+    font-size: 28px !important;
+  }
+  .subscribe p {
+    font-size: 21px !important;
+  }
+}
 .subscribe p {
   color: rgba(219, 227, 227, 1);
   font-size: 25px;
@@ -1398,8 +1472,6 @@ input[type="radio"] {
   background-image: url(../Images/CONTACT.png);
   background-position: center;
   background-size: cover;
-  height: 60vh;
-  text-align: center;
 }
 .contact .landing h2 {
   color: rgba(224, 224, 224, 1);
@@ -1577,29 +1649,6 @@ input[type="radio"] {
   font-weight: 500;
   border-radius: 10px;
 }
-.login h4::before,
-.login .h4::after {
-  content: "";
-  position: absolute;
-}
-.login h6::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 1px;
-  border: 1px solid rgba(191, 191, 191, 1);
-  top: 15px;
-  right: 30px;
-}
-.login h6::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 1px;
-  border: 1px solid rgba(191, 191, 191, 1);
-  top: 15px;
-  left: 30px;
-}
 
 .login input {
   font-size: 25px;
@@ -1624,6 +1673,7 @@ input[type="radio"] {
   color: white;
   background: linear-gradient(177.87deg, #9b51e0 1.8%, #1ae3d9 148.29%);
 }
+
 @media (max-width: 1400px) {
   .login .img-2 {
     max-width: 100%;
@@ -1652,7 +1702,6 @@ input[type="radio"] {
     max-width: 100%;
   }
 }
-
 /* //////////////////////////////// */
 /* MY-ACCOUNT */
 /* ///////////////////////////////// */
@@ -1660,10 +1709,9 @@ input[type="radio"] {
   background-image: url(../Images/Rectangle\ 178.png);
   background-position: center;
   background-size: cover;
-  height: 60vh;
 }
 .account .info {
-  margin-top: 200px;
+  padding-block: 70px;
 }
 .account .info span {
   color: rgba(225, 219, 219, 1);
@@ -1676,39 +1724,11 @@ input[type="radio"] {
   letter-spacing: 1.5px;
 }
 .account-info .box {
-  width: 500px;
   height: 550px;
   background: rgba(255, 255, 255, 1);
   margin-top: 50px;
 }
-@media (max-width: 1024px) {
-  .account-info .box {
-    max-width: 400px;
-  }
-  .account-info input,
-  .account-info button {
-    max-width: 230px;
-  }
-}
-@media (max-width: 991px) {
-  .account-info .box {
-    margin: 20px auto;
-  }
-}
-@media (max-width: 420px) {
-  .account-info .box {
-    max-width: 100%;
-  }
-  .account-info input,
-  .account-info button {
-    max-width: 150px;
-  }
-}
-@media (max-width: 991px) {
-  .account-info .box {
-    margin: 20px auto;
-  }
-}
+
 .account-info img {
   width: 100px;
   padding-top: 40px;
@@ -1718,10 +1738,7 @@ input[type="radio"] {
   font-size: 15px;
   margin-bottom: 5px;
 }
-.account-info input,
-.account-info button {
-  width: 350px;
-}
+
 .account-info input {
   background-color: rgba(242, 241, 241, 1);
 }
@@ -1733,7 +1750,7 @@ input[type="radio"] {
 }
 .account-info h4 {
   color: rgba(91, 94, 101, 1);
-  padding-top: 80px;
+  padding-top: 50px;
   font-family: var(--first-font);
 }
 /* //////////////////////////////// */
@@ -2149,7 +2166,7 @@ input[type="radio"] {
   background: linear-gradient(180deg, #9b51e0 19.62%, #1ae3d9 149.45%);
 }
 .footer img {
-  width: 200px;
+  width: 160px;
 }
 .footer .social {
   width: 200px;
